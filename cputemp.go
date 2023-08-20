@@ -3,7 +3,7 @@ package cputemp
 import (
 	"errors"
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -12,7 +12,7 @@ const termalzone = "/sys/class/thermal/thermal_zone0/temp"
 
 // Get returns the temperature of the Raspberry processor
 func Get() (float64, error) {
-	raw, err := ioutil.ReadFile(termalzone)
+	raw, err := os.ReadFile(termalzone)
 	if err != nil {
 		return 0, fmt.Errorf("error reading %q: %v", termalzone, err)
 	}
