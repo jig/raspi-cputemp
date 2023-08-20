@@ -11,5 +11,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("CPU temp is %f°C", temp)
+	log.Printf("CPU temp is %.3f°C", temp)
 }
