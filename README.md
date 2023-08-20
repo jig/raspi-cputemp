@@ -1,6 +1,6 @@
 # raspi-cputemp
 
-Minimal package to read ARM CPU of the Raspberry Pi 4.
+Minimal package to read ARM CPU temperature of the Raspberry Pi 4.
 
 Idea from https://github.com/fgrosse/pi-temp.
 
